@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pokemon Search AppM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <h1>Pokémon Search App</h1>
+            <div class="round-edges" id="main-container">
+                <form id="search-form">
+                    <label for="search-input">Search for a Pokemon by name, or by ID</label>
+                    <input required placeholder="" title="search" type="text" id="search-input"></input>
+                    <button class="round-edges" type="submit" id="search-button">Search</button>
+                </form>
+                <p id="title"><span id="pokemon-name"></span> #<span id="pokemon-id"></span></p>
+                <p id="size">Weight: <span id="weight"></span> Height: <span id="height"></span></p>
+                <div id="image-container"></div>
+                <div id="types"></div>
+                <table id="stats">
+                    <tbody>
+                        <tr>
+                            <th class="stat-name">Base</th>
+                            <th class="number-value">Stats</th>
+                        </tr>
+                        <tr>
+                            <td class="stat-name">HP:</td>
+                            <td class="number-value" id="hp"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-name">Attack:</td>
+                            <td class="number-value" id="attack"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-name">Defense:</td>
+                            <td class="number-value" id="defense"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-name">Special Atk:</td>
+                            <td class="number-value" id="special-attack"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-name">Special Def:</td>
+                            <td class="number-value" id="special-defense"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-name">Speed:</td>
+                            <td class="number-value" id="speed"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
